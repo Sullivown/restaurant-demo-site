@@ -1,27 +1,25 @@
-import contact from "../pages/contact";
-import home from "../pages/homepage";
+import home from "../pages/home";
 import menu from "../pages/menu";
+import contact from "../pages/contact";
 
 const header = function() {
     const links = ['home', 'menu', 'contact'];
 
     const render = () => {
-        const headerElement = document.querySelector('#header');
+        const headerDiv = document.querySelector('#header');
+        headerDiv.innerHTML = '';
 
-        headerElement.textContent = 'HEADER';
+        headerDiv.textContent = 'HEADER';
         
         for (const page in links) {
 
             const button = document.createElement('button');
             button.id = links[page];
             button.textContent = links[page];
-            headerElement.appendChild(button);
+            headerDiv.appendChild(button);
         
             button.addEventListener('click', handleClick);
-
         }
-
-        headerElement.appendChild(headerElement);
     }
 
     const handleClick = (e) => {

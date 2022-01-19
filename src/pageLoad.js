@@ -1,6 +1,6 @@
 // Load the header, homepage content and footer
 import header from "./components/header";
-import homepage from "./pages/homepage";
+import home from "./pages/home";
 import footer from "./components/footer";
 
 const pageLoad = function() {
@@ -18,6 +18,10 @@ const pageLoad = function() {
     app.appendChild(footerElement);
 
     header().render();
+    home().render();
+    footer().render();
+
+    
 }
 
 export default pageLoad;

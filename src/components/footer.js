@@ -1,7 +1,14 @@
 const footer = function() {
-    const footerElement = document.createElement('div');
-    footerElement.textContent = 'FOOTER';
-    return footerElement;
-}
+
+    const render = () => {
+        const footerElement = document.querySelector('#footer');
+
+        footerElement.textContent = 'footer';
+    }
+    
+    return {
+        render,
+    };
+};
 
 export default footer;
