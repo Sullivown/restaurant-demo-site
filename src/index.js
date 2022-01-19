@@ -1,3 +1,8 @@
-const content = document.getElementById('content');
+import pageLoad from "./pageLoad";
 
-content.textContent = 'This is a test!';
+const displayController = (function() {
+    
+    // Init
+    pageLoad();
+
+})()
