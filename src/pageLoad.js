@@ -20,8 +20,6 @@ const pageLoad = function() {
     header().render();
     home().render();
     footer().render();
-
-    
 }
 
 export default pageLoad;

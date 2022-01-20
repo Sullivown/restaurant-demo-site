@@ -10,16 +10,26 @@ const header = function() {
         headerDiv.innerHTML = '';
 
         headerDiv.textContent = 'HEADER';
+
+        const navDiv = document.createElement('nav');
+        navDiv.setAttribute('id', 'nav-div');
+        
+        const navLinksList = document.createElement('ol');
+        navLinksList.setAttribute('id', 'nav-links');
         
         for (const page in links) {
 
-            const button = document.createElement('button');
-            button.id = links[page];
-            button.textContent = links[page];
-            headerDiv.appendChild(button);
+            const link = document.createElement('li');
+            link.id = links[page];
+            link.textContent = links[page];
+            navLinksList.appendChild(link);
         
-            button.addEventListener('click', handleClick);
+            link.addEventListener('click', handleClick);
         }
+
+        navDiv.appendChild(navLinksList);
+        
+        headerDiv.appendChild(navDiv);
     }
 
     const handleClick = (e) => {
