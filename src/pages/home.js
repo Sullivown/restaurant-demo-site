@@ -1,3 +1,5 @@
+import heroImage from '../images/test.png';
+
 const home = function() {
     const openingTimesArr = [
         {
@@ -19,30 +21,37 @@ const home = function() {
         contentDiv.innerHTML = '';
 
         const homeDiv =  document.createElement('div');
-        homeDiv.setAttribute('id', 'home-div');
+        homeDiv.setAttribute('id', 'home');
         homeDiv.classList.add('page-content');
 
+        contentDiv.appendChild(homeDiv);
+
+        const homeContentDiv = document.createElement('div');
+
+        const title = document.createElement('div');
+        title.classList.add('content-section');
         const h1 = document.createElement('h1');
         h1.textContent = `Welcome to Jimmy's Restaurant`
-        homeDiv.appendChild(h1);
+        title.appendChild(h1);
 
-        const about = document.createElement('div');
-        about.textContent = `Jimmy's is a swell place for nice people. We have food here that you can put in your mouth. It is good.`;
-        homeDiv.appendChild(about);
+        homeContentDiv.appendChild(title);
 
         const openingTimes = document.createElement('div');
+        openingTimes.classList.add('content-section');
         for (const day in openingTimesArr) {
             const div = document.createElement('div');
             div.textContent = `${openingTimesArr[day].days}: ${openingTimesArr[day].times}`
             openingTimes.appendChild(div);
         }
-        homeDiv.appendChild(openingTimes);
+        homeContentDiv.appendChild(openingTimes);
 
         const location = document.createElement('div');
+        location.classList.add('content-section');
         location.textContent = `123 place, Nicetown, County, Postcode`;
-        homeDiv.appendChild(location);
+        homeContentDiv.appendChild(location);
 
-        contentDiv.appendChild(homeDiv);
+        homeDiv.appendChild(homeContentDiv);
+        
     }
     
     return {

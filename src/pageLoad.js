@@ -4,7 +4,12 @@ import home from "./pages/home";
 import footer from "./components/footer";
 
 const pageLoad = function() {
-    const app = document.querySelector('#app');
+    const body = document.querySelector('body');
+
+    const app = document.createElement('div');
+    app.setAttribute('id', 'app');
+    body.appendChild(app);
+
     const headerElement = document.createElement('div');
     const contentElement = document.createElement('div');
     const footerElement = document.createElement('div');
@@ -19,6 +24,7 @@ const pageLoad = function() {
 
     header().render();
     home().render();
+    header().update();
     footer().render();
 }
 

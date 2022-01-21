@@ -2,6 +2,12 @@ body {
     margin: 0px;
     height: 100vh;
     width: 100vw;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
 }
 
 #app {
@@ -13,9 +19,14 @@ body {
 
 #header {
     display: flex;
-    padding: 25px;
-    background-color: darkseagreen;
+    padding: 25px 25px 0px 25px;
+    background-color: #f9f7ef;
     align-items: center;
+}
+
+#logo {
+    height: 5rem;
+    width: 5rem;
 }
 
 #nav-div {
@@ -34,11 +45,16 @@ body {
     cursor: pointer;
 }
 
+.current-page {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
 #content {
     display: flex;
     flex: 1;
-    padding: 25px;
     justify-content: center;
+    min-height: 100%;
 }
 
 .page-content {
@@ -53,5 +69,28 @@ body {
     display: flex;
     padding: 25px;
     justify-content: center;
-    background-color:darkseagreen;
+    color: #f9f7ef;
+    background-color: #000000;
+}
+
+#home {
+    width: 100%;
+    background-image: url("../src/images/test.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+}
+
+.content-section {
+    margin: 15px;
 }
