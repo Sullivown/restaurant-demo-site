@@ -1,7 +1,7 @@
 import home from "../pages/home";
 import menu from "../pages/menu";
 import contact from "../pages/contact";
-import smallLogo from "../images/logo-small.png"
+import smallLogo from "../images/logo-small-monochrome.png"
 
 const header = function() {
     const links = ['home', 'menu', 'contact'];
@@ -14,8 +14,12 @@ const header = function() {
         logo.src = smallLogo;
         logo.setAttribute('id', 'logo');
         logo.addEventListener('click', handleClick);
-
         headerDiv.appendChild(logo);
+
+        const siteTitle = document.createElement('div');
+        siteTitle.setAttribute('id', 'site-title')
+        siteTitle.textContent = `Jimmy's Burgers`;
+        headerDiv.appendChild(siteTitle);
 
         const navDiv = document.createElement('nav');
         navDiv.setAttribute('id', 'nav-div');

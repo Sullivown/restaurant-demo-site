@@ -1,5 +1,3 @@
-import heroImage from '../images/test.png';
-
 const home = function() {
     const openingTimesArr = [
         {
@@ -31,7 +29,7 @@ const home = function() {
         const title = document.createElement('div');
         title.classList.add('content-section');
         const h1 = document.createElement('h1');
-        h1.textContent = `Welcome to Jimmy's Restaurant`
+        h1.textContent = `Jimmy's Burgers`;
         title.appendChild(h1);
 
         homeContentDiv.appendChild(title);
