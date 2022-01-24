@@ -1,0 +1,63 @@
+{
+    "burgers": [
+        {
+            "name": "Cheeseburger",
+            "description": "Beef patty, Cheddar cheese, lettuce, tomato & pickles",
+            "price": "9.95"
+        },
+        {
+            "name": "You're My Boy Blue! Burger",
+            "description": "Beef patty, Stilton, blue cheese Sauce, lettuce, tomato & pickles",
+            "price": "11.95"
+        },
+        {
+            "name": "Yeehaw Burger",
+            "description": "2 x Beef patty, onion ring, Pepperjack cheese, BBQ sauce",
+            "price": "13.95"
+        },
+        {
+            "name": "Breakfast Burger",
+            "description": "Beef patty, pancake, fried egg, maple syrup",
+            "price": "11.95"
+        }
+    ],
+    "sides": [
+        {
+            "name": "Classic Chips",
+            "description": "Our classic chips with salt & pepper",
+            "price": "5.95"
+        },
+        {
+            "name": "Truffle Cheese Chips",
+            "description": "Chips with melted truffle cheese and a side of our special burger sauce",
+            "price": "8.95"
+        },
+        {
+            "name": "Garden Salad",
+            "description": "Lettuce, tomato, spinach, cucumber",
+            "price": "7.95"
+        }
+    ],
+    "drinks": [
+        {
+            "name": "Cola",
+            "description": "The classic",
+            "price": "3.95"
+        },
+        {
+            "name": "Diet Cola",
+            "description": "The classic, no sugar",
+            "price": "3.95"
+        },
+        {
+            "name": "Lemonade",
+            "description": "Delicious lemony delight",
+            "price": "3.95"
+        },
+        {
+            "name": "Dandelion & Burdock",
+            "description": "An English delicacy",
+            "price": "3.95"
+        }
+    ]
+}
