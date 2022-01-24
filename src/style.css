@@ -1,6 +1,7 @@
 @font-face {
-    font-family: 'Logo Font';
-    src: url('./PermanentMarker-Regular.ttf') format('ttf');
+    font-family: 'Title Font';
+    src: url('./resources/permanent-marker-v10-latin-regular.woff') format('woff'),
+        url('./resources/permanent-marker-v10-latin-regular.woff2') format('woff2');
 }
 
 body {
@@ -8,6 +9,7 @@ body {
     height: 100vh;
     width: 100%;
     box-sizing: border-box;
+    font-family: monospace;
 }
 
 h1 {
@@ -35,7 +37,8 @@ h1 {
 }
 
 #site-title {
-    font-family: 'Logo Font';
+    font-family: 'Title Font';
+    font-size: 3rem;
     margin-left: 25px;
 }
 
@@ -49,6 +52,8 @@ h1 {
     margin-left: auto;
     list-style-type: none;
     gap: 25px;
+    font-family: 'Title Font';
+    font-size: 1.5rem;
 }
 
 #nav-links:hover {
@@ -103,4 +108,9 @@ h1 {
 
 .content-section {
     margin: 15px;
+}
+
+.title {
+    font-family: 'Title Font';
+    font-size: 1.5rem;
 }

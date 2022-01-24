@@ -27,9 +27,9 @@ const home = function() {
         const homeContentDiv = document.createElement('div');
 
         const title = document.createElement('div');
-        title.classList.add('content-section');
+        title.classList.add('content-section', 'title');
         const h1 = document.createElement('h1');
-        h1.textContent = `Jimmy's Burgers`;
+        h1.textContent = `The best burgers in town!`;
         title.appendChild(h1);
 
         homeContentDiv.appendChild(title);
@@ -45,7 +45,7 @@ const home = function() {
 
         const location = document.createElement('div');
         location.classList.add('content-section');
-        location.textContent = `123 place, Nicetown, County, Postcode`;
+        location.textContent = `123 Yummyroad, Flavourtown, Delicioushire, N0M N0M`;
         homeContentDiv.appendChild(location);
 
         homeDiv.appendChild(homeContentDiv);
