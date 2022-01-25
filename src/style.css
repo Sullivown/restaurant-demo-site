@@ -63,6 +63,8 @@ h4 {
 }
 
 #site-title {
+    display: flex;
+    align-items: center;
     font-family: 'Title Font';
     font-size: 3rem;
     margin-left: 25px;
