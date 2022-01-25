@@ -10,16 +10,21 @@ const header = function() {
         const headerDiv = document.querySelector('#header');
         headerDiv.innerHTML = '';
 
+        const siteTitleDiv = document.createElement('div');
+        siteTitleDiv.setAttribute('id', 'site-title-div');
+
         const logo = new Image();
         logo.src = smallLogo;
         logo.setAttribute('id', 'logo');
         logo.addEventListener('click', handleClick);
-        headerDiv.appendChild(logo);
+        siteTitleDiv.appendChild(logo);
 
         const siteTitle = document.createElement('div');
         siteTitle.setAttribute('id', 'site-title')
         siteTitle.textContent = `Jimmy's Burgers`;
-        headerDiv.appendChild(siteTitle);
+        siteTitleDiv.appendChild(siteTitle);
+
+        headerDiv.appendChild(siteTitleDiv);
 
         const navDiv = document.createElement('nav');
         navDiv.setAttribute('id', 'nav-div');

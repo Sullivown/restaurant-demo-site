@@ -1,19 +1,6 @@
-const home = function() {
-    const openingTimesArr = [
-        {
-            'days': 'Monday - Thursday',
-            'times': '11am - 9pm'
-        },
-        {
-            'days': 'Friday & Saturday',
-            'times': '11am - 11pm'
-        },
-        {
-            'days': 'Sunday',
-            'times': '11am - 6pm'
-        }
-    ];
+import details from "../components/details";
 
+const home = function() {
     const render = () => {
         const contentDiv = document.querySelector('#content');
         contentDiv.innerHTML = '';
@@ -34,18 +21,11 @@ const home = function() {
 
         homeContentDiv.appendChild(title);
 
-        const openingTimes = document.createElement('div');
-        openingTimes.classList.add('content-section');
-        for (const day in openingTimesArr) {
-            const div = document.createElement('div');
-            div.textContent = `${openingTimesArr[day].days}: ${openingTimesArr[day].times}`
-            openingTimes.appendChild(div);
-        }
+        const openingTimes = details().generateOpeningTimes();
         homeContentDiv.appendChild(openingTimes);
 
         const location = document.createElement('div');
-        location.classList.add('content-section');
-        location.textContent = `123 Yummyroad, Flavourtown, Delicioushire, N0M N0M`;
+        location.textContent = '123 Yummyroad, Flavourtown, Delicioushire, N0M N0M';
         homeContentDiv.appendChild(location);
 
         homeDiv.appendChild(homeContentDiv);

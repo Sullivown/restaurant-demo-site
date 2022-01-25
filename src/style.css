@@ -45,7 +45,16 @@ h4 {
     display: flex;
     padding: 25px 25px 25px 25px;
     background-color: #f9f7ef;
+    justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+#site-title-div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
 #logo {
@@ -60,13 +69,14 @@ h4 {
 }
 
 #nav-div {
-    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 #nav-links {
     display: flex;
     justify-content: space-around;
-    margin-left: auto;
     list-style-type: none;
     gap: 25px;
     font-family: 'Title Font';
@@ -86,7 +96,6 @@ h4 {
     display: flex;
     flex: 1;
     justify-content: center;
-    min-height: 100%;
 }
 
 .page-content {
@@ -103,6 +112,9 @@ h4 {
     justify-content: center;
     color: #f9f7ef;
     background-color: #000000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 #home {
@@ -114,6 +126,7 @@ h4 {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100vh;
 }
 
 #home div {
@@ -150,3 +163,31 @@ h4 {
     flex: 1 1 100px;
     max-width: 500px;
 }
+
+.footer-section, .contact-section {
+    text-align: center;
+}
+
+#contact {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 25px;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 1.1rem;
+}
+
+iframe { 
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
