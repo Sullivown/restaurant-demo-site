@@ -2,7 +2,7 @@
 
 Restaurant demo website project for [The Odin Project](https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript/lessons/restaurant-page).
 
-[View Live.](https://sullivown.github.io/restaurant-demo-site/).
+[View Live.](https://sullivown.github.io/restaurant-demo-site/)
 
 ## About
 
